@@ -1,4 +1,4 @@
->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -21,20 +21,34 @@
         h1 {
             color: #00adb5;           
         }
-        /* --- KODE TOMBOL BARU DI BAWAH INI --- */
+        /* --- AREA TOMBOL SOSMED --- */
+        .container-tombol {
+            display: flex;
+            gap: 15px; /* Jarak antar tombol */
+            margin-top: 25px;
+        }
         .tombol {
             display: inline-block;
-            margin-top: 20px;
             padding: 12px 24px;
-            background-color: #00adb5; /* Warna tombol disamakan dengan judul */
-            color: #222831;            /* Warna teks di dalam tombol */
-            text-decoration: none;     /* Menghilangkan garis bawah pada link */
+            color: #ffffff;            
+            text-decoration: none;     
             font-weight: bold;
-            border-radius: 8px;        /* Membuat sudut tombol agak bulat */
+            border-radius: 8px;        
             transition: 0.3s;
         }
-        .tombol:hover {
-            background-color: #ececec; /* Tombol berubah warna saat disentuh/diarahkan */
+        /* Warna Tombol WA (Hijau) */
+        .tombol-wa {
+            background-color: #25D366;
+        }
+        .tombol-wa:hover {
+            background-color: #1ebd54;
+        }
+        /* Warna Tombol FB (Biru) */
+        .tombol-fb {
+            background-color: #1877F2;
+        }
+        .tombol-fb:hover {
+            background-color: #145dbf;
         }
     </style>
 </head>
@@ -43,8 +57,14 @@
     <h1>Halo Dunia!</h1>
     <p>Selamat datang di website pertama saya yang sudah dimodifikasi!</p>
     
-    <!-- Tombol Aktif (Silakan ganti google.com dengan link sosmed/WA kamu nanti) -->
-    <a href="https://www.google.com" class="tombol" target="_blank">Hubungi Saya</a>
+    <!-- Wadah Tombol Sosial Media -->
+    <div class="container-tombol">
+        <!-- Tombol WhatsApp -->
+        <a href="https://wa.me/6285267816442" class="tombol tombol-wa" target="_blank">Hubungi via WA</a>
+        
+        <!-- Tombol Facebook -->
+        <a href="https://www.facebook.com/agusttpsetia" class="tombol tombol-fb" target="_blank">Facebook Saya</a>
+    </div>
 
 </body>
 </html>
