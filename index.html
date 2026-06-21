@@ -1,1 +1,80 @@
-<img src="https://i.postimg.cc/4444Y7vX/1000270516.png" alt="Foto Agus Riyanto" class="foto-profil">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Resmi Agus Riyanto</title>
+    <style>
+        body {
+            background-color: #1a1e24; 
+            color: #ececec;           
+            font-family: sans-serif;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;            
+            margin: 0;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .foto-profil {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%; 
+            border: 3px solid #00adb5; 
+            margin-bottom: 18px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        h1 {
+            color: #00adb5;           
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #b2bec3;
+            max-width: 400px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .container-tombol {
+            display: flex;
+            gap: 15px; 
+            margin-top: 30px;
+        }
+        .tombol {
+            display: inline-block;
+            padding: 14px 28px;
+            color: #ffffff;            
+            text-decoration: none;     
+            font-weight: bold;
+            border-radius: 50px; 
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+        }
+        .tombol:active, .tombol:hover {
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        }
+        .tombol-wa { background-color: #25D366; }
+        .tombol-fb { background-color: #1877F2; }
+    </style>
+</head>
+<body>
+
+    <!-- Link foto baru yang stabil dan anti-pecah -->
+    <img src="https://i.postimg.cc/4444Y7vX/1000270516.png" alt="Foto Agus Riyanto" class="foto-profil">
+
+    <h1>Agus Riyanto</h1>
+    
+    <p>Selamat datang di halaman resmi saya. Silakan hubungi saya melalui tombol media sosial di bawah ini untuk jalin silaturahmi maupun kerja sama.</p>
+    
+    <div class="container-tombol">
+        <a href="https://wa.me/6285267816442" class="tombol tombol-wa" target="_blank">Hubungi via WA</a>
+        <a href="https://www.facebook.com/agusttpsetia" class="tombol tombol-fb" target="_blank">Facebook Saya</a>
+    </div>
+
+</body>
+</html>
