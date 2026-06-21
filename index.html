@@ -1,3 +1,4 @@
+>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,19 +7,34 @@
     <title>Web Keren Pertamaku</title>
     <style>
         body {
-            background-color: #222831; /* Warna latar belakang abu-abu gelap */
-            color: #ececec;           /* Warna teks putih keabu-abuan */
-            font-family: sans-serif;  /* Jenis huruf modern */
+            background-color: #222831; 
+            color: #ececec;           
+            font-family: sans-serif;  
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;            /* Konten otomatis pas di tengah layar HP */
+            height: 100vh;            
             margin: 0;
             text-align: center;
         }
         h1 {
-            color: #00adb5;           /* Warna biru toska cerah untuk judul */
+            color: #00adb5;           
+        }
+        /* --- KODE TOMBOL BARU DI BAWAH INI --- */
+        .tombol {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #00adb5; /* Warna tombol disamakan dengan judul */
+            color: #222831;            /* Warna teks di dalam tombol */
+            text-decoration: none;     /* Menghilangkan garis bawah pada link */
+            font-weight: bold;
+            border-radius: 8px;        /* Membuat sudut tombol agak bulat */
+            transition: 0.3s;
+        }
+        .tombol:hover {
+            background-color: #ececec; /* Tombol berubah warna saat disentuh/diarahkan */
         }
     </style>
 </head>
@@ -26,6 +42,9 @@
 
     <h1>Halo Dunia!</h1>
     <p>Selamat datang di website pertama saya yang sudah dimodifikasi!</p>
+    
+    <!-- Tombol Aktif (Silakan ganti google.com dengan link sosmed/WA kamu nanti) -->
+    <a href="https://www.google.com" class="tombol" target="_blank">Hubungi Saya</a>
 
 </body>
 </html>
